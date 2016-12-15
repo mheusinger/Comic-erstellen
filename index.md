@@ -1,14 +1,172 @@
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erstelle dein eigenes Comic!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-### Designer Templates
-We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.
+    <!-- Hier sind die Styles für dein Comic definiert: -->
+    <style>
+      body {
+        background-color: #efefef;
+        font-family: "Comic Sans MS", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #d02626;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #e2e971;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 40%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -15px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
 
-### Creating pages manually
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+  </head>
+  <body>
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+    <!-- Schritt 1: Hier kannst du den Titel eingeben -->
+    <h1>Erstelle dein eigenes Comic!</h1>
+    <!--
+Hier beginnt dein Comic.
+Das 'comic' <div> umschließt jede Comic 'scene' um sie zusammenzuhalten.
+-->
+    <div class="comic">
 
-### Support or Contact
-Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+      <!--
+Schritt 2, 3, and 4:
+Das untenstehende HTML ist die erste Szene 'scene'.
+Starte, indem du die Bildadressen änderst auf eigene Fotos
+-->
+      <div class="scene">
+        <p class="caption bottom">Erstelle deine eigenen Szene</p>
+        <p class="speech right">Was für ein Ausblick!</p>
+        <img src="cc0-pics/1.jpg" alt="" />
+      </div>
+
+      <!-- Hier kommt die zweite Szene-->
+      <div class="scene">
+        <p class="caption top">...schreibe etwas hier rein</p>
+        <img src="cc0-pics/2.jpg" alt="" />
+      </div>
+
+      <!-- Dies ist die dritte Szene -->
+      <div class="scene">
+        <p class="speech left">Sprechblasen! WOW!</p>
+        <img src="cc0-pics/3.jpg" alt="" />
+      </div>
+
+      <!-- Dies ist die vierte Szene -->
+      <div class="scene">
+        <p class="speech right">Was ist das?</p>
+        <img src="cc0-pics/4.jpg" alt="" />
+      </div>
+
+      <!-- Dies ist die fünfte Szene -->
+      <div class="scene">
+        <img src="cc0-pics/5.jpg" alt="" />
+      </div>
+
+      <!-- Dies ist die sechste Szene -->
+      <div class="scene">
+        <p class="caption bottom">Ende!</p>
+        <img src="cc0-pics/6.jpg" alt="" />
+      </div>
+
+      <!--
+Hier ist das Comic zu Ende :(
+Willst du ein größeres Comic erstellen?
+Schritt 6:
+Kopiere das HTML von einer Szene 'scene' und mache unten weiter
+-->
+
+    </div>
+
+    <!-- Disclaimer für die Bilder -->
+    <footer>
+      Alle Bilder sind unter CC0-Lizenz von <a href="https://pixabay.com/de/">https://pixabay.com/de/</a> Den Code und die Anleitung findest du ebenfalls unter CC0-Lizenz <a href="https://github.com/empeiria/Comic-erstellen">hier auf GitHub</a>
+    </footer>
+
+  </body>
+</html>
