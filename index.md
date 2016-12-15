@@ -166,6 +166,8 @@ Kopiere das HTML von einer Szene 'scene' und mache unten weiter
     <!-- Disclaimer für die Bilder -->
     <footer>
       Alle Bilder sind unter CC0-Lizenz von <a href="https://pixabay.com/de/">https://pixabay.com/de/</a> Den Code und die Anleitung findest du ebenfalls unter CC0-Lizenz <a href="https://github.com/empeiria/Comic-erstellen">hier auf GitHub</a>
+     forked from <a href="https://github.com/empeiria/Comic-erstellen">https://github.com/empeiria/Comic-erstelle</a>
+   
     </footer>
 
   </body>
