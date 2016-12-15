@@ -1,0 +1,8 @@
+title: Comic-erstellen
+description: Erstelle dein eigenes Comic
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
